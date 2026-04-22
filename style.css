@@ -220,9 +220,11 @@ section {
 /* Biersoorten overview */
 .main-wide {
   width: 100%;
-  max-width: 800px;
+  max-width: 600px;
   padding: 2rem 1rem;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .page-title {
@@ -237,50 +239,55 @@ section {
 }
 
 .beer-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
 }
 
 .beer-card {
   background: #fff;
   border-radius: var(--radius);
-  padding: 1.5rem;
+  padding: 1.25rem 1.5rem;
   box-shadow: 0 2px 12px rgba(0,0,0,0.07);
   text-decoration: none;
   color: var(--brown);
   transition: transform 0.15s, box-shadow 0.15s;
   display: flex;
-  flex-direction: column;
-  gap: 0.4rem;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.25rem;
 }
 
 .beer-card:hover {
-  transform: translateY(-3px);
+  transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(0,0,0,0.12);
 }
 
 .beer-card-icon {
   font-size: 2rem;
-  margin-bottom: 0.25rem;
+  flex-shrink: 0;
+}
+
+.beer-card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
 }
 
 .beer-card h3 {
-  font-size: 1.1rem;
+  font-size: 1.05rem;
 }
 
 .beer-card p {
-  font-size: 0.9rem;
+  font-size: 0.875rem;
   color: var(--gray);
   line-height: 1.5;
-  flex: 1;
 }
 
 .beer-card-tags {
   font-size: 0.78rem;
   color: var(--amber-dark);
   font-weight: 600;
-  margin-top: 0.25rem;
 }
 
 /* Beer detail page */
