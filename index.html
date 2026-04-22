@@ -12,13 +12,7 @@
     <p class="tagline">Ontdek welk bier bij jou past</p>
   </header>
 
-  <nav id="main-nav">
-    <button class="nav-btn active" data-target="quiz-flow">Bierquiz</button>
-    <button class="nav-btn" data-target="untappd-flow">Untappd-profiel</button>
-  </nav>
-
   <main>
-    <div id="quiz-flow">
     <section id="intro">
       <p>Beantwoord een paar vragen en wij vertellen welk bier het beste bij jou past.</p>
       <button id="start-btn" class="btn-primary">Start de quiz</button>
@@ -45,49 +39,6 @@
       </div>
       <button id="restart-btn" class="btn-secondary">Doe de quiz opnieuw</button>
     </section>
-    </div>
-
-    <div id="untappd-flow" class="hidden">
-      <section id="untappd-search">
-        <h2>Jouw Untappd-profiel</h2>
-        <p>Vul je Untappd-gebruikersnaam in en we analyseren jouw biersmaak op basis van je check-ins.</p>
-        <form id="untappd-form">
-          <div class="input-row">
-            <input
-              type="text"
-              id="untappd-username"
-              placeholder="Untappd gebruikersnaam"
-              autocomplete="off"
-              spellcheck="false"
-            />
-            <button type="submit" class="btn-primary">Laad profiel</button>
-          </div>
-        </form>
-        <p id="untappd-error" class="error-msg hidden"></p>
-      </section>
-
-      <section id="untappd-profile" class="hidden">
-        <div id="profile-card">
-          <img id="profile-avatar" src="" alt="Avatar" />
-          <div id="profile-info">
-            <h3 id="profile-name"></h3>
-            <p id="profile-stats"></p>
-          </div>
-        </div>
-
-        <div id="profile-styles">
-          <h4>Jouw meest gedronken stijlen</h4>
-          <ul id="styles-list"></ul>
-        </div>
-
-        <div id="profile-recents">
-          <h4>Recente check-ins</h4>
-          <ul id="recents-list"></ul>
-        </div>
-
-        <button id="untappd-reset-btn" class="btn-secondary">Ander profiel laden</button>
-      </section>
-    </div>
   </main>
 
   <footer>
@@ -95,6 +46,5 @@
   </footer>
 
   <script src="quiz.js"></script>
-  <script src="untappd.js"></script>
 </body>
 </html>
