@@ -1,0 +1,202 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --amber: #c8821a;
+  --amber-dark: #a36813;
+  --cream: #fdf6e3;
+  --brown: #3d2b1f;
+  --gray: #6b5e54;
+  --light-gray: #ede8e3;
+  --radius: 12px;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: var(--cream);
+  color: var(--brown);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background: var(--brown);
+  color: var(--cream);
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+header h1 {
+  font-size: 2.2rem;
+  letter-spacing: -0.5px;
+}
+
+header .tagline {
+  margin-top: 0.4rem;
+  color: var(--amber);
+  font-size: 1rem;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+section {
+  width: 100%;
+  max-width: 560px;
+  text-align: center;
+}
+
+.hidden {
+  display: none !important;
+}
+
+/* Intro */
+#intro p {
+  font-size: 1.1rem;
+  color: var(--gray);
+  margin-bottom: 2rem;
+}
+
+/* Buttons */
+.btn-primary,
+.btn-secondary {
+  display: inline-block;
+  padding: 0.85rem 2.2rem;
+  border: none;
+  border-radius: 999px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.btn-primary {
+  background: var(--amber);
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: var(--amber-dark);
+  transform: translateY(-1px);
+}
+
+.btn-secondary {
+  background: var(--light-gray);
+  color: var(--brown);
+  margin-top: 1.5rem;
+}
+
+.btn-secondary:hover {
+  background: #ddd4cc;
+}
+
+/* Progress */
+#progress {
+  margin-bottom: 1.5rem;
+}
+
+#progress-text {
+  font-size: 0.85rem;
+  color: var(--gray);
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+#progress-bar {
+  height: 6px;
+  background: var(--light-gray);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+#progress-fill {
+  height: 100%;
+  background: var(--amber);
+  border-radius: 999px;
+  transition: width 0.3s ease;
+  width: 0%;
+}
+
+/* Question */
+#question-text {
+  font-size: 1.35rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.4;
+}
+
+#options {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.option-btn {
+  background: #fff;
+  border: 2px solid var(--light-gray);
+  border-radius: var(--radius);
+  padding: 0.9rem 1.2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: left;
+  transition: border-color 0.15s, background 0.15s;
+  color: var(--brown);
+}
+
+.option-btn:hover {
+  border-color: var(--amber);
+  background: #fff8ee;
+}
+
+/* Result */
+#result-card {
+  background: #fff;
+  border-radius: var(--radius);
+  padding: 2rem;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+  margin-top: 1rem;
+}
+
+#result-icon {
+  font-size: 3.5rem;
+  margin-bottom: 0.5rem;
+}
+
+#result-name {
+  font-size: 1.6rem;
+  margin-bottom: 0.75rem;
+  color: var(--amber-dark);
+}
+
+#result-description {
+  color: var(--gray);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.examples {
+  font-size: 0.9rem;
+  font-style: italic;
+  color: var(--gray);
+}
+
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.85rem;
+  color: var(--gray);
+  border-top: 1px solid var(--light-gray);
+}
+
+@media (max-width: 480px) {
+  header h1 { font-size: 1.7rem; }
+  #question-text { font-size: 1.15rem; }
+}

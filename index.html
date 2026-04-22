@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bier voor Jou</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🍺 Bier voor Jou</h1>
+    <p class="tagline">Ontdek welk bier bij jou past</p>
+  </header>
+
+  <main>
+    <section id="intro">
+      <p>Beantwoord een paar vragen en wij vertellen welk bier het beste bij jou past.</p>
+      <button id="start-btn" class="btn-primary">Start de quiz</button>
+    </section>
+
+    <section id="quiz" class="hidden">
+      <div id="progress">
+        <span id="progress-text">Vraag 1 van 5</span>
+        <div id="progress-bar"><div id="progress-fill"></div></div>
+      </div>
+      <div id="question-block">
+        <h2 id="question-text"></h2>
+        <div id="options"></div>
+      </div>
+    </section>
+
+    <section id="result" class="hidden">
+      <h2>Jouw bier is:</h2>
+      <div id="result-card">
+        <div id="result-icon"></div>
+        <h3 id="result-name"></h3>
+        <p id="result-description"></p>
+        <p id="result-examples" class="examples"></p>
+      </div>
+      <button id="restart-btn" class="btn-secondary">Doe de quiz opnieuw</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 biervoorjou.nl</p>
+  </footer>
+
+  <script src="quiz.js"></script>
+</body>
+</html>
