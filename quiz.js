@@ -54,7 +54,7 @@ const beerTypes = [
     tags: ["licht", "fris"],
     description:
       "Fris, licht en verfrissend. Een klassieke pilsner past perfect bij jou: makkelijk drinkbaar, nooit saai en altijd op zijn plek op een warm terras.",
-    examples: "Bijv. Heineken, Amstel, Grolsch, Brouwerij 't IJ Pilsner",
+    examples: "Bijv. Hertog Jan, Frontaal Dutch Pilsener, Grolsch, Brouwerij 't IJ Pilsner",
   },
   {
     id: "ipa",
