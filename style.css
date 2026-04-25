@@ -217,6 +217,19 @@ section {
   color: var(--gray);
 }
 
+.result-more {
+  display: inline-block;
+  margin-top: 1rem;
+  color: var(--amber-dark);
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.result-more:hover {
+  text-decoration: underline;
+}
+
 /* Biersoorten overview */
 .main-wide {
   width: 100%;
