@@ -252,8 +252,8 @@ section {
 }
 
 .beer-grid {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 0.75rem;
 }
 
@@ -420,7 +420,8 @@ footer {
   border-top: 1px solid var(--light-gray);
 }
 
-@media (max-width: 480px) {
+@media (max-width: 560px) {
   header h1 { font-size: 1.7rem; }
   #question-text { font-size: 1.15rem; }
+  .beer-grid { grid-template-columns: 1fr; }
 }
